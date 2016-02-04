@@ -39,7 +39,7 @@ public:
         rat r1(2, 3);
         printResult("Getters", r1.getNum() == 2 && r1.getDen() == 3);
     }
-/*
+
     void testReduce() const
     {
         rat r1(16, 20);
@@ -105,7 +105,7 @@ int main()
     
     rt.testConstructors();
     rt.testGetters();
-    //rt.testReduce();
+    rt.testReduce();
     //rt.testReciprocal();
     //rt.testArithmetic();
     //rt.testRelational();

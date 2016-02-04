@@ -30,6 +30,7 @@ rat::rat(int n, int d)
 		num = 0;
 		den = 1;
 	}
+	rat::reduce();
 }
 
 int rat::getNum() const{

@@ -21,7 +21,7 @@ public:
 
 // Uncomment one at a time as you fill in features for your class
 
-/*
+
     void testConstructors() const
     {
         rat r1;
@@ -103,7 +103,7 @@ int main()
     
     // Uncomment one at a time as you add features to your class
     
-    //rt.testConstructors();
+    rt.testConstructors();
     //rt.testGetters();
     //rt.testReduce();
     //rt.testReciprocal();

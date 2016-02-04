@@ -12,9 +12,13 @@ class rat
     friend class RatTester;
 
 private:
-    // declare private members here
+    int num;
+	int den;
 public:
-    // declare public members here
+	rat();
+	rat(int n);
+	rat(int n, int d);
+   
 };
 
 #endif

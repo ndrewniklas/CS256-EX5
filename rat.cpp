@@ -14,3 +14,21 @@ int lcm(int x, int y)
 }
 
 // Put your function implementations here
+
+rat::rat()
+	:num(0), den(1)
+{ }
+
+rat::rat(int n)
+	:num(n), den(1)
+{ }
+
+rat::rat(int n, int d)
+	:num(n), den(d)
+{
+	if(den == 0){
+		num = 0;
+		den = 1;
+	}
+}
+

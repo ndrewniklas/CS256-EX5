@@ -54,7 +54,7 @@ public:
         rat r2 = r1.reciprocal();
         printResult("Test Reciprocal", r2.num == 1 && r2.den == 18);
     }
-/*
+
     void testArithmetic() const
     {
         rat r1(3, 5);
@@ -107,7 +107,7 @@ int main()
     rt.testGetters();
     rt.testReduce();
     rt.testReciprocal();
-    //rt.testArithmetic();
+    rt.testArithmetic();
     //rt.testRelational();
     //rt.testStr();
     

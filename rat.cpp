@@ -55,11 +55,27 @@ rat rat::reciprocal() const{
 	return rat(den, num);
 }
 
+rat rat::operator+(const rat& right) const{
+	int numN = this->num * right.den;
+	numN += (this->den * right.num);
+	int denN = this->den * right.den;
+	return rat(numN, denN);
+}
 
+rat rat::operator-(const rat& right) const{
+	rat temp = rat(-right.num, right.den);
+	return *this + temp;
+}
 
+rat rat::operator*(const rat& right) const{
+	int numN = this->num * right.num;
+	int denN = this->den * right.den;
+	return rat(numN, denN);
+}
 
-
-
+rat rat::operator/(const rat& right) const{
+	return *this * right.reciprocal();
+}
 
 
 

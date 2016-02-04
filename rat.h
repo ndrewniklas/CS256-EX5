@@ -22,6 +22,10 @@ public:
 	int getNum() const;
 	int getDen() const;
 	rat reciprocal() const;
+	rat operator+(const rat& right) const;
+	rat operator-(const rat& right) const;
+	rat operator*(const rat& right) const;
+	rat operator/(const rat& right) const;
    
 };
 

@@ -14,10 +14,13 @@ class rat
 private:
     int num;
 	int den;
+	void reduce();
 public:
 	rat();
 	rat(int n);
 	rat(int n, int d);
+	int getNum() const;
+	int getDen() const;
    
 };
 

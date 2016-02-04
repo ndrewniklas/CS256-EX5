@@ -33,7 +33,7 @@ public:
         rat r4(-6, 0);
         printResult("n/0 test", r4.num == 0 && r4.den == 1);
     }
-/*
+
     void testGetters() const
     {
         rat r1(2, 3);
@@ -104,7 +104,7 @@ int main()
     // Uncomment one at a time as you add features to your class
     
     rt.testConstructors();
-    //rt.testGetters();
+    rt.testGetters();
     //rt.testReduce();
     //rt.testReciprocal();
     //rt.testArithmetic();

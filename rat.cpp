@@ -32,3 +32,21 @@ rat::rat(int n, int d)
 	}
 }
 
+int rat::getNum() const{
+	return num;
+}
+
+int rat::getDen() const{
+	return den;
+}
+
+void rat::reduce(){
+	int g = gcd(num, den);
+	num /= g;
+	den /= g;
+	if(den < 0){
+		num = -num;
+		den = -den;
+	}
+}
+

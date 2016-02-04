@@ -21,6 +21,7 @@ public:
 	rat(int n, int d);
 	int getNum() const;
 	int getDen() const;
+	rat reciprocal() const;
    
 };
 

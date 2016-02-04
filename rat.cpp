@@ -51,3 +51,29 @@ void rat::reduce(){
 	}
 }
 
+rat rat::reciprocal() const{
+	return rat(den, num);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

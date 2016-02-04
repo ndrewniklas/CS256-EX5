@@ -47,7 +47,7 @@ public:
         rat r2(90, -30);
         printResult("Reduce Constructor", r2.num == -3 && r2.den == 1);
     }
-/*
+
     void testReciprocal() const
     {
         rat r1(18, 1);
@@ -106,7 +106,7 @@ int main()
     rt.testConstructors();
     rt.testGetters();
     rt.testReduce();
-    //rt.testReciprocal();
+    rt.testReciprocal();
     //rt.testArithmetic();
     //rt.testRelational();
     //rt.testStr();

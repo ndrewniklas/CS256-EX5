@@ -68,7 +68,7 @@ public:
         r3 = r1 / r2;
         printResult("Test /", r3.num == 11 && r3.den == 15);
     }
-/*
+
     void testRelational() const
     {
         rat r1(3, 5);
@@ -81,7 +81,7 @@ public:
         printResult("Test <=", r2 <= r1 && r3 <= r1 && !(r1 <= r2));
         printResult("Test >=", r1 >= r2 && r1 >= r3 && !(r2 >= r1));
     }
-*/
+
     void testStr() const
     {
         rat r1(3, 5);
@@ -108,7 +108,7 @@ int main()
     rt.testReduce();
     rt.testReciprocal();
     rt.testArithmetic();
-    //rt.testRelational();
+    rt.testRelational();
     rt.testStr();
     
     return 0;

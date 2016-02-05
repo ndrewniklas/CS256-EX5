@@ -123,14 +123,14 @@ bool rat::operator>(const rat& right) const{
 }
 
 bool rat::operator>=(const rat& right) const{
-	if((*this == right) && (*this > right)){
+	if((*this == right) || (*this > right)){
 		return true;
 	}
 	return false;
 }
 
 bool rat::operator<=(const rat& right) const{
-	if((*this == right) && (*this < right)){
+	if((*this == right) || (*this < right)){
 		return true;
 	}
 	return false;

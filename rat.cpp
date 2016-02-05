@@ -77,11 +77,70 @@ rat rat::operator/(const rat& right) const{
 	return *this * right.reciprocal();
 }
 
+bool rat::operator==(const rat& right) const{
+	if(this->num == right.num){
+		if(this->den == right.den){
+			return true;
+		}
+		return false;
+	}
+	return false;
+}
 
+bool rat::operator<(const rat& right) const{
+	if(this->num < right.num){
+		if(this->den > right.den){
+			return true;
+		}else if(this->den == right.den){
+			return true;
+		}
+		return false;
+	}else if(this->num > right.num){
+		if(this->den > right.den){
+			return true;
+		}
+		return false;
+	}else{ //num == num
+		if(this->den > right.den){
+			return true;
+		}else if(this->den == right.den){
+			return false;
+		}
+		return false;
+	}
+	return false;
+}
 
+bool rat::operator!=(const rat& right) const{
+	return !(*this == right);
+}
 
+bool rat::operator>(const rat& right) const{
+	if(!(*this == right)){
+		return !(*this < right);
+	}
+	return false;
+}
 
+bool rat::operator>=(const rat& right) const{
+	if((*this == right) && (*this > right)){
+		return true;
+	}
+	return false;
+}
 
+bool rat::operator<=(const rat& right) const{
+	if((*this == right) && (*this < right)){
+		return true;
+	}
+	return false;
+}
+
+std::string rat::str() const{
+	std::stringstream ss;
+	ss << this->num << '/' << this->den;
+	return ss.str();
+}
 
 
 

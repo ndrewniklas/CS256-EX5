@@ -81,7 +81,7 @@ public:
         printResult("Test <=", r2 <= r1 && r3 <= r1 && !(r1 <= r2));
         printResult("Test >=", r1 >= r2 && r1 >= r3 && !(r2 >= r1));
     }
-/*
+*/
     void testStr() const
     {
         rat r1(3, 5);
@@ -91,7 +91,7 @@ public:
         printResult("Test str()", (r1 * r1 + r2).reciprocal().str() == "25/24");
     }
     
-*/
+
 };
 
 
@@ -109,7 +109,7 @@ int main()
     rt.testReciprocal();
     rt.testArithmetic();
     //rt.testRelational();
-    //rt.testStr();
+    rt.testStr();
     
     return 0;
 }

@@ -1,3 +1,8 @@
+//Andrew Niklas
+//Homework 4
+//Completed 2/5/2016
+
+
 #ifndef RAT_H
 #define RAT_H
 

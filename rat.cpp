@@ -1,3 +1,8 @@
+//Andrew Niklas
+//Homework 4
+//Completed 2/5/2016
+
+
 #include "rat.h"
 
 // These functions can be useful for calculations with fractions
